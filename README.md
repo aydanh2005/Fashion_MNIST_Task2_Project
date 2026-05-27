@@ -1,0 +1,1 @@
+# Fashion_MNIST_Task2_Project
