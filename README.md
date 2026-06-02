@@ -1,14 +1,17 @@
-
-# Fashion-MNIST Classification Project
+# Fashion-MNIST Classification: CNN vs Random Forest
 
 ## Project Overview
 
-This project compares two machine learning methods for classifying fashion product images from the Fashion-MNIST dataset:
+This project compares two machine learning approaches for classifying fashion product images from the Fashion-MNIST dataset:
 
 1. Convolutional Neural Network (CNN)
 2. Random Forest Classifier
 
-The project was developed for Task 2: Classifying Fashion Products in the Computer Vision project report. The aim is to evaluate both models using accuracy, training time, confusion matrices, precision, recall, and worst-performing class analysis.
+The project was developed for **DLBAIPCV01 – Project: Computer Vision, Task 2: Classifying Fashion Products**. The objective is to evaluate both models using accuracy, training time, confusion matrices, precision, recall, and worst-performing class analysis.
+
+## Research Question
+
+Which model is more suitable for automatic fashion product classification: a Convolutional Neural Network or a Random Forest classifier?
 
 ## Dataset
 
@@ -16,62 +19,64 @@ Fashion-MNIST contains 70,000 grayscale images of fashion products:
 
 - 60,000 training images
 - 10,000 test images
-- 10 product categories
-- Image size: 28 x 28 pixels
-- Color format: grayscale
+- 10 classes
+- Image size: 28 × 28 pixels
+- Pixel values: 0–255 before normalization
 
-The classes are:
+The 10 classes are:
 
-- T-shirt/top
-- Trouser
-- Pullover
-- Dress
-- Coat
-- Sandal
-- Shirt
-- Sneaker
-- Bag
-- Ankle boot
+1. T-shirt/top
+2. Trouser
+3. Pullover
+4. Dress
+5. Coat
+6. Sandal
+7. Shirt
+8. Sneaker
+9. Bag
+10. Ankle boot
 
-## Models
+## Methods
 
-### Convolutional Neural Network
+### CNN
 
-The CNN uses convolutional layers, max-pooling layers, dense layers, dropout, and a softmax output layer. It is designed to learn spatial image features directly from the 28 x 28 grayscale images.
+The CNN uses convolutional layers, max-pooling layers, dense layers, dropout, and a softmax output layer. Images were normalized and reshaped to 28 × 28 × 1.
 
-### Random Forest Classifier
+### Random Forest
 
-The Random Forest classifier uses flattened image vectors with 784 pixel features per image. It serves as a classical machine learning baseline for comparison.
+The Random Forest classifier was trained on flattened 784-dimensional pixel vectors. It was used as a classical machine learning baseline for comparison with the CNN.
 
-## Evaluation
+## Evaluation Metrics
 
 The models were evaluated using:
 
 - Training accuracy
 - Test accuracy
 - Training time
-- Train and test confusion matrices
-- Precision, recall, and F1-score
-- Worst-performing class analysis
+- Confusion matrices for train and test sets
+- Precision and recall for train and test sets
+- Worst-performing category analysis
 
-## Main Finding
+## Key Results
 
-The CNN showed better generalization performance and is recommended for production use in fashion product image classification. The Random Forest classifier was useful as a baseline model but showed signs of overfitting, with perfect training accuracy and lower test accuracy.
+The CNN achieved better generalization performance than the Random Forest classifier. The Random Forest reached perfect training accuracy but lower test accuracy, indicating stronger overfitting. Both models struggled most with visually similar upper-body clothing categories such as Shirt, Pullover, T-shirt/top, and Coat.
 
-## Project Files
+## Production Recommendation
 
-- Fashion_MNIST_Task2_Project.ipynb: full notebook with code, outputs, tables, and figures
-- results/: saved confusion matrices, plots, and CSV result tables
-- requirements.txt: required Python packages
-- README.md: project documentation
+The CNN is recommended for production use because it is better suited to image data and can learn spatial features such as edges, shapes, and local textures. The Random Forest classifier is useful as a baseline model but is less appropriate as the final production model because it relies on flattened pixel vectors.
+
+## Repository Contents
+
+- `Fashion_MNIST_Task2_Project.ipynb` — full notebook with code, outputs, figures, and analysis
+- `requirements.txt` — Python dependencies
+- `README.md` — project documentation
+- result figures and CSV tables — confusion matrices, precision/recall tables, model comparison, and final summary
 
 ## How to Run
 
-1. Create or activate a Python environment.
-2. Install the required dependencies listed in requirements.txt.
-3. Open Fashion_MNIST_Task2_Project.ipynb in Jupyter Notebook or JupyterLab.
-4. Run all cells from top to bottom.
+1. Clone or download the repository.
+2. Create a Python environment.
+3. Install dependencies:
 
-## Author
-
-Prepared as part of a Computer Vision project report.
+```bash
+pip install -r requirements.txt
