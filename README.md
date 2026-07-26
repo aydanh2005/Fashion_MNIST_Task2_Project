@@ -128,3 +128,12 @@ pip install -r requirements.txt
 ```
 
 The complete outputs are available in the [`results`](results) folder.
+
+## Author
+
+**Aydan Huseynli**
+
+Created for the IU module:
+
+**DLBAIPCV01 – Project: Computer Vision**  
+**Task 2: Classifying Fashion Products**
