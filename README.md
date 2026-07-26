@@ -73,9 +73,13 @@ The models were evaluated using:
 - Precision and recall for train and test sets
 - Worst-performing category analysis
 
+## Reproducibility
+
+Random seeds were fixed for the CNN training process, and the Random Forest configuration was defined with fixed parameters to ensure reproducible evaluation.
+
 ## Key Results
 
-The CNN achieved better generalization performance than the Random Forest classifier. The Random Forest reached perfect training accuracy but lower test accuracy, indicating stronger overfitting. Both models struggled most with visually similar upper-body clothing categories such as Shirt, Pullover, T-shirt/top, and Coat.
+The CNN achieved higher test accuracy and better generalization to unseen images, while the Random Forest provided faster training time but showed signs of overfitting.
 
 ## Final Results
 
@@ -84,7 +88,6 @@ The CNN achieved better generalization performance than the Random Forest classi
 | CNN | 93.18% | 90.47% | 88.40 seconds |
 | Random Forest | 100.00% | 87.53% | 14.48 seconds |
 
-The Random Forest achieved perfect training accuracy but lower test accuracy, indicating stronger overfitting. The CNN achieved higher test accuracy and better generalization.
 
 ## Production Recommendation
 
@@ -115,7 +118,7 @@ The complete confusion matrices, precision and recall tables, and supporting out
 - `Fashion_MNIST_Task2_Project.ipynb` — full notebook with code, outputs, figures, and analysis
 - `requirements.txt` — Python dependencies
 - `README.md` — project documentation
-- result figures and CSV tables — confusion matrices, precision/recall tables, model comparison, and final summary
+- `results/` — confusion matrices, precision/recall tables, model comparison table, final summary, and generated figures
 
 ## How to Run
 
