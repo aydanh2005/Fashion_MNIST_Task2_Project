@@ -1,0 +1,7 @@
+Model,Dataset,Class,Precision,Recall,F1-score
+CNN,Test,Shirt,0.7958,0.604,0.6868
+CNN,Test,Pullover,0.8428,0.874,0.8581
+CNN,Test,T-shirt/top,0.8378,0.883,0.8598
+Random Forest,Test,Shirt,0.7187,0.585,0.645
+Random Forest,Test,Pullover,0.7628,0.807,0.7843
+Random Forest,Test,Coat,0.7628,0.807,0.7843

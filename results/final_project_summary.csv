@@ -1,0 +1,6 @@
+Criterion,CNN,Random Forest
+Training accuracy,0.9318,1.0
+Test accuracy,0.9047,0.8753
+Training time (seconds),88.4,14.48
+Worst test class by recall,Shirt,Shirt
+Recommended for production,Yes,No

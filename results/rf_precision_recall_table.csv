@@ -1,0 +1,21 @@
+Model,Dataset,Class,Precision,Recall,F1-score
+Random Forest,Training,T-shirt/top,1.0,1.0,1.0
+Random Forest,Training,Trouser,1.0,1.0,1.0
+Random Forest,Training,Pullover,1.0,1.0,1.0
+Random Forest,Training,Dress,1.0,1.0,1.0
+Random Forest,Training,Coat,1.0,1.0,1.0
+Random Forest,Training,Sandal,1.0,1.0,1.0
+Random Forest,Training,Shirt,1.0,1.0,1.0
+Random Forest,Training,Sneaker,1.0,1.0,1.0
+Random Forest,Training,Bag,1.0,1.0,1.0
+Random Forest,Training,Ankle boot,1.0,1.0,1.0
+Random Forest,Test,T-shirt/top,0.8167,0.86,0.8378
+Random Forest,Test,Trouser,0.9938,0.961,0.9771
+Random Forest,Test,Pullover,0.7628,0.807,0.7843
+Random Forest,Test,Dress,0.8774,0.902,0.8895
+Random Forest,Test,Coat,0.7628,0.807,0.7843
+Random Forest,Test,Sandal,0.9784,0.952,0.965
+Random Forest,Test,Shirt,0.7187,0.585,0.645
+Random Forest,Test,Sneaker,0.9255,0.956,0.9405
+Random Forest,Test,Bag,0.9578,0.975,0.9663
+Random Forest,Test,Ankle boot,0.9499,0.948,0.9489
