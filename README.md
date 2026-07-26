@@ -78,5 +78,36 @@ The CNN is recommended for production use because it is better suited to image d
 2. Create a Python environment.
 3. Install dependencies:
 
+````markdown
 ```bash
 pip install -r requirements.txt
+
+````
+## Final Results
+
+| Model | Training Accuracy | Test Accuracy | Training Time |
+|---|---:|---:|---:|
+| CNN | 93.18% | 90.47% | 88.40 seconds |
+| Random Forest | 100.00% | 87.53% | 14.48 seconds |
+
+The Random Forest achieved perfect training accuracy but lower test accuracy, indicating stronger overfitting. The CNN achieved higher test accuracy and better generalization.
+
+## Selected Visual Results
+
+### Fashion-MNIST Sample Images
+
+![Fashion-MNIST sample images](results/fashion_mnist_examples.png)
+
+### CNN Test Confusion Matrix
+
+![CNN test confusion matrix](results/cnn_test_confusion_matrix.png)
+
+### Random Forest Test Confusion Matrix
+
+![Random Forest test confusion matrix](results/rf_test_confusion_matrix.png)
+
+### CNN Training and Validation Accuracy
+
+![CNN training and validation accuracy](results/cnn_training_validation_accuracy.png)
+
+The complete confusion matrices, precision and recall tables, and supporting outputs are available in the [`results`](results) folder.
