@@ -1,3 +1,0 @@
-Model,Training Accuracy,Test Accuracy,Training Time (seconds)
-CNN,0.9357,0.9066,107.62
-Random Forest,1.0,0.8748,19.35
